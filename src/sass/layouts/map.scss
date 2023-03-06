@@ -1,0 +1,173 @@
+.map {
+  .container {
+    position: relative;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
+
+.man {
+  background-image: url(../images/man_empty.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-left: 3px;
+  }
+
+  &:nth-child(1):hover,
+  &:nth-child(1):hover ~ .man {
+    background-image: url(../images/man_filled.webp);
+  }
+
+  &:nth-child(2):hover,
+  &:nth-child(2):hover ~ .man {
+    background-image: url(../images/man_filled.webp);
+  }
+
+  &:nth-child(3):hover {
+    background-image: url(../images/man_filled.webp);
+  }
+}
+
+.first-man {
+  display: block;
+  width: 10.5px;
+  height: 25px;
+}
+
+.second-man {
+  display: block;
+  width: 15px;
+  height: 36px;
+}
+
+.third-man {
+  display: block;
+  width: 20px;
+  height: 48px;
+}
+
+.north-america {
+  position: absolute;
+  top: 300px;
+  left: 275px;
+}
+
+.south-america {
+  position: absolute;
+  top: 500px;
+  left: 400px;
+}
+
+.europe {
+  position: absolute;
+  top: 260px;
+  left: 680px;
+}
+
+.asia {
+  position: absolute;
+  top: 350px;
+  right: 220px;
+}
+
+.australia {
+  position: absolute;
+  bottom: 130px;
+  right: 120px;
+}
+
+.small {
+  position: absolute;
+  width: 40px;
+}
+
+.medium {
+  position: absolute;
+  width: 40px;
+}
+
+.large {
+  position: absolute;
+  width: 40px;
+}
+
+.na-small {
+  top: 290px;
+  left: 330px;
+}
+
+.na-medium {
+  top: 320px;
+  left: 270px;
+}
+
+.na-large {
+  top: 300px;
+  left: 210px;
+}
+
+.sa-small {
+  top: 515px;
+  left: 445px;
+}
+
+.sa-medium {
+  top: 570px;
+  left: 410px;
+}
+
+.sa-large {
+  top: 480px;
+  left: 375px;
+}
+
+.eu-small {
+  top: 270px;
+  left: 690px;
+}
+
+.eu-medium {
+  top: 310px;
+  left: 595px;
+}
+
+.eu-large {
+  top: 250px;
+  left: 760px;
+}
+
+.as-small {
+  top: 365px;
+  right: 200px;
+}
+
+.as-medium {
+  top: 390px;
+  right: 315px;
+}
+
+.as-large {
+  top: 300px;
+  right: 155px;
+}
+
+.au-small {
+  bottom: 120px;
+  right: 80px;
+}
+
+.au-medium {
+  bottom: 120px;
+  right: 175px;
+}
+
+.au-large {
+  bottom: 125px;
+  right: 130px;
+}
