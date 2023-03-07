@@ -11,6 +11,7 @@ const {
   naSecondCircle,
   europeCircle,
   asiaCircle,
+  topText,
 } = getRefs;
 
 const numberOfEndUsers = evt => {
@@ -46,6 +47,8 @@ const numberOfEndUsers = evt => {
     naSecondCircle.classList.remove('visually-hidden');
     europeCircle.classList.remove('visually-hidden');
     asiaCircle.classList.remove('visually-hidden');
+    topText.textContent =
+      'Where is your data? Choose one spot for Object Storage system';
   }
 };
 

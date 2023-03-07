@@ -25,8 +25,20 @@ export const getRefs = {
   auLarge: document.querySelector('.au-large'),
 
   skipUsers: document.querySelector('.skip_users'),
+  startTest: document.querySelector('.start_test'),
+  topText: document.querySelector('.text_top'),
+
   naFirstCircle: document.querySelector('.na-first_circle'),
   naSecondCircle: document.querySelector('.na-second_circle'),
   europeCircle: document.querySelector('.europe_circle'),
   asiaCircle: document.querySelector('.asia_circle'),
+
+  naFirstBlue: document.querySelector('.na-first_blue'),
+  naFirstRed: document.querySelector('.na-first_red'),
+  naSecondBlue: document.querySelector('.na-second_blue'),
+  naSecondRed: document.querySelector('.na-second_red'),
+  europeBlue: document.querySelector('.europe_blue'),
+  europeRed: document.querySelector('.europe_red'),
+  asiaBlue: document.querySelector('.asia_blue'),
+  asiaRed: document.querySelector('.asia_red'),
 };

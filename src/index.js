@@ -4,3 +4,4 @@ import './js/europe';
 import './js/asia';
 import './js/australia';
 import './js/skipUsers';
+import './js/addServers';

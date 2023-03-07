@@ -4,9 +4,9 @@
 
     <p class="text_top">
       Where are your users? Chose the number for every region
-      <span class="skip_users next_step visually-hidden">Next</span>
-      <span class="start_test next_step visually-hidden">Start</span>
     </p>
+    <span class="skip_users next_step visually-hidden">Next</span>
+    <span class="start_test next_step visually-hidden disabled">Start</span>
 
     <!-- ------------------ North America ------------------ -->
 
@@ -32,11 +32,30 @@
       alt="large"
     />
 
-    <div class="na-first_circle circle_empty visually-hidden" value="na1"></div>
-    <div
-      class="na-second_circle circle_empty visually-hidden"
-      value="na2"
-    ></div>
+    <div class="na-first_circle circle_empty visually-hidden" data-value="na1">
+      <img
+        class="na-first_blue blue_server visually-hidden"
+        src="./images/server.webp"
+        alt="server"
+      />
+      <img
+        class="na-first_red red_server visually-hidden"
+        src="./images/server_ByteCloud.webp"
+        alt="server"
+      />
+    </div>
+    <div class="na-second_circle circle_empty visually-hidden" data-value="na2">
+      <img
+        class="na-second_blue blue_server visually-hidden"
+        src="./images/server.webp"
+        alt="server"
+      />
+      <img
+        class="na-second_red red_server visually-hidden"
+        src="./images/server_ByteCloud.webp"
+        alt="server"
+      />
+    </div>
 
     <!-- --------------------------------------------------- -->
 
@@ -90,7 +109,18 @@
       alt="large"
     />
 
-    <div class="europe_circle circle_empty visually-hidden" value="eu"></div>
+    <div class="europe_circle circle_empty visually-hidden" data-value="eu">
+      <img
+        class="europe_blue blue_server visually-hidden"
+        src="./images/server.webp"
+        alt="server"
+      />
+      <img
+        class="europe_red red_server visually-hidden"
+        src="./images/server_ByteCloud.webp"
+        alt="server"
+      />
+    </div>
 
     <!-- --------------------------------------------------- -->
 
@@ -118,7 +148,18 @@
       alt="large"
     />
 
-    <div class="asia_circle circle_empty visually-hidden" value="as"></div>
+    <div class="asia_circle circle_empty visually-hidden" data-value="as">
+      <img
+        class="asia_blue blue_server visually-hidden"
+        src="./images/server.webp"
+        alt="server"
+      />
+      <img
+        class="asia_red red_server visually-hidden"
+        src="./images/server_ByteCloud.webp"
+        alt="server"
+      />
+    </div>
 
     <!-- --------------------------------------------------- -->
 

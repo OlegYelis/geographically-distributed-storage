@@ -179,8 +179,20 @@
 }
 
 .next_step {
+  position: absolute;
+  top: 15px;
+  left: 452px;
   color: rgb(18, 93, 231);
   cursor: pointer;
+}
+
+.start_test {
+  left: 498px;
+
+  &.disabled {
+    cursor: default;
+    color: rgb(174, 199, 245);
+  }
 }
 
 .circle_empty {
@@ -219,4 +231,17 @@
   position: absolute;
   top: 485px;
   right: 220px;
+}
+
+.blue_server {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 50px;
+}
+
+.red_server {
+  position: relative;
+  top: -15px;
+  width: 50px;
 }

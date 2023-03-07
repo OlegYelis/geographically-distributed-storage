@@ -12,6 +12,7 @@ const {
   naSecondCircle,
   europeCircle,
   asiaCircle,
+  topText,
 } = getRefs;
 const { sAmericaUsers, nAmericaUsers, europeUsers, australiaUsers, asiaUsers } =
   store;
@@ -43,6 +44,8 @@ const nextStepHandler = () => {
   naSecondCircle.classList.remove('visually-hidden');
   europeCircle.classList.remove('visually-hidden');
   asiaCircle.classList.remove('visually-hidden');
+  topText.textContent =
+    'Where is your data? Choose one spot for Object Storage system';
 };
 
 skipUsers.addEventListener('click', nextStepHandler);
