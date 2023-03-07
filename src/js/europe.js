@@ -1,32 +1,51 @@
-const euList = document.querySelector('.europe');
+import { store } from './store';
+import { getRefs } from './getRefs';
 
-const euSmall = document.querySelector('.eu-small');
-const euMedium = document.querySelector('.eu-medium');
-const euLarge = document.querySelector('.eu-large');
+const {
+  euList,
+  euSmall,
+  euMedium,
+  euLarge,
+  skipUsers,
+  naFirstCircle,
+  naSecondCircle,
+  europeCircle,
+  asiaCircle,
+} = getRefs;
 
 const numberOfEndUsers = evt => {
   const number = evt.target.value;
+
+  store.europeUsers = number;
+
+  if (!store.status) {
+    store.status = 'users';
+    skipUsers.classList.remove('visually-hidden');
+  }
+
   switch (number) {
-    case 1:
-      euList.classList.add('visually-hidden');
-      euSmall.classList.remove('visually-hidden');
-      break;
+    case 3:
+      euLarge.classList.remove('visually-hidden');
 
     case 2:
-      euList.classList.add('visually-hidden');
-      euSmall.classList.remove('visually-hidden');
       euMedium.classList.remove('visually-hidden');
-      break;
 
-    case 3:
-      euList.classList.add('visually-hidden');
+    case 1:
       euSmall.classList.remove('visually-hidden');
-      euMedium.classList.remove('visually-hidden');
-      euLarge.classList.remove('visually-hidden');
-      break;
 
     default:
-      break;
+      euList.classList.add('visually-hidden');
+  }
+
+  const { sAmericaUsers, nAmericaUsers, asiaUsers, australiaUsers } = store;
+
+  if (sAmericaUsers && nAmericaUsers && asiaUsers && australiaUsers) {
+    store.status = 'servers';
+    skipUsers.classList.add('visually-hidden');
+    naFirstCircle.classList.remove('visually-hidden');
+    naSecondCircle.classList.remove('visually-hidden');
+    europeCircle.classList.remove('visually-hidden');
+    asiaCircle.classList.remove('visually-hidden');
   }
 };
 

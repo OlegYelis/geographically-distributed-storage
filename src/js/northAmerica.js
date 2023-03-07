@@ -1,32 +1,51 @@
-const naList = document.querySelector('.north-america');
+import { store } from './store';
+import { getRefs } from './getRefs';
 
-const naSmall = document.querySelector('.na-small');
-const naMedium = document.querySelector('.na-medium');
-const naLarge = document.querySelector('.na-large');
+const {
+  naList,
+  naSmall,
+  naMedium,
+  naLarge,
+  skipUsers,
+  naFirstCircle,
+  naSecondCircle,
+  europeCircle,
+  asiaCircle,
+} = getRefs;
 
 const numberOfEndUsers = evt => {
   const number = evt.target.value;
+
+  store.nAmericaUsers = number;
+
+  if (!store.status) {
+    store.status = 'users';
+    skipUsers.classList.remove('visually-hidden');
+  }
+
   switch (number) {
-    case 1:
-      naList.classList.add('visually-hidden');
-      naSmall.classList.remove('visually-hidden');
-      break;
+    case 3:
+      naLarge.classList.remove('visually-hidden');
 
     case 2:
-      naList.classList.add('visually-hidden');
-      naSmall.classList.remove('visually-hidden');
       naMedium.classList.remove('visually-hidden');
-      break;
 
-    case 3:
-      naList.classList.add('visually-hidden');
+    case 1:
       naSmall.classList.remove('visually-hidden');
-      naMedium.classList.remove('visually-hidden');
-      naLarge.classList.remove('visually-hidden');
-      break;
 
     default:
-      break;
+      naList.classList.add('visually-hidden');
+  }
+
+  const { sAmericaUsers, europeUsers, asiaUsers, australiaUsers } = store;
+
+  if (sAmericaUsers && europeUsers && asiaUsers && australiaUsers) {
+    store.status = 'servers';
+    skipUsers.classList.add('visually-hidden');
+    naFirstCircle.classList.remove('visually-hidden');
+    naSecondCircle.classList.remove('visually-hidden');
+    europeCircle.classList.remove('visually-hidden');
+    asiaCircle.classList.remove('visually-hidden');
   }
 };
 
