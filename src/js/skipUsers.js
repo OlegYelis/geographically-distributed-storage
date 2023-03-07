@@ -14,27 +14,25 @@ const {
   asiaCircle,
   topText,
 } = getRefs;
-const { sAmericaUsers, nAmericaUsers, europeUsers, australiaUsers, asiaUsers } =
-  store;
 
 const nextStepHandler = () => {
-  if (!sAmericaUsers) {
+  if (!store.sAmericaUsers) {
     saList.classList.add('visually-hidden');
   }
 
-  if (!nAmericaUsers) {
+  if (!store.nAmericaUsers) {
     naList.classList.add('visually-hidden');
   }
 
-  if (!europeUsers) {
+  if (!store.europeUsers) {
     euList.classList.add('visually-hidden');
   }
 
-  if (!australiaUsers) {
+  if (!store.australiaUsers) {
     auList.classList.add('visually-hidden');
   }
 
-  if (!asiaUsers) {
+  if (!store.asiaUsers) {
     asList.classList.add('visually-hidden');
   }
 
