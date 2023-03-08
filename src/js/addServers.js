@@ -20,7 +20,6 @@ const {
 
 const addServerHandler = evt => {
   const serverPlace = evt.target.dataset.value;
-  evt.target.style.background = 'none';
 
   if (!store.blueServer) {
     switch (serverPlace) {
@@ -82,6 +81,7 @@ const addServerHandler = evt => {
       startTest.classList.remove('disabled');
     }
   }
+  evt.target.style.background = 'none';
 };
 
 naFirstCircle.addEventListener('click', addServerHandler);

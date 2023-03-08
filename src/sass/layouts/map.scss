@@ -86,16 +86,19 @@
 .small {
   position: absolute;
   width: 40px;
+  z-index: 1;
 }
 
 .medium {
   position: absolute;
   width: 40px;
+  z-index: 1;
 }
 
 .large {
   position: absolute;
   width: 40px;
+  z-index: 1;
 }
 
 .na-small {
@@ -238,10 +241,37 @@
   top: -15px;
   left: -15px;
   width: 50px;
+  z-index: 1;
 }
 
 .red_server {
   position: relative;
   top: -15px;
   width: 50px;
+  z-index: 1;
+}
+
+.firstNALines {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  z-index: 0;
+}
+
+.secondNALines {
+  position: absolute;
+  top: 3px;
+  left: 15px;
+}
+
+.europeLines {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.asiaLines {
+  position: absolute;
+  top: 5px;
+  right: -66px;
 }

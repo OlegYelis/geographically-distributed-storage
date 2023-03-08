@@ -1,8 +1,8 @@
-import './js/northAmerica';
-import './js/southAmerica';
-import './js/europe';
-import './js/asia';
-import './js/australia';
+import './js/userRegions/northAmerica';
+import './js/userRegions/southAmerica';
+import './js/userRegions/europe';
+import './js/userRegions/asia';
+import './js/userRegions/australia';
 import './js/skipUsers';
 import './js/addServers';
 import './js/addServers';
