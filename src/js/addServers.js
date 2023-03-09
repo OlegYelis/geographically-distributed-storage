@@ -1,5 +1,6 @@
 import { store } from './store';
 import { getRefs } from './getRefs';
+import { startTestHandler } from './startTest';
 
 const {
   naFirstCircle,
@@ -82,6 +83,15 @@ const addServerHandler = evt => {
     }
   }
   evt.target.style.background = 'none';
+
+  if (
+    store.asiaServer &&
+    store.europeServer &&
+    store.naSecondServer &&
+    store.naFirstServer
+  ) {
+    startTestHandler();
+  }
 };
 
 naFirstCircle.addEventListener('click', addServerHandler);

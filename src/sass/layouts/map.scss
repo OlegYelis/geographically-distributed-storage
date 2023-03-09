@@ -251,6 +251,41 @@
   z-index: 1;
 }
 
+.info_time {
+  position: absolute;
+  background-color: rgb(194, 250, 250);
+  padding: 5px 15px;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.na_info {
+  top: 265px;
+  left: 237px;
+}
+
+.sa_info {
+  top: 530px;
+  left: 333px;
+}
+
+.eu_info {
+  top: 214px;
+  left: 665px;
+}
+
+.as_info {
+  top: 328px;
+  right: 241px;
+}
+
+.au_info {
+  bottom: 92px;
+  right: 90px;
+}
+
 .firstNALines {
   position: absolute;
   top: 5px;
