@@ -124,4 +124,25 @@ export const getRefs = {
   singaporeSouthL: document.querySelector('.singaporeSouthL'),
   singaporeSouthM: document.querySelector('.singaporeSouthM'),
   singaporeSouthS: document.querySelector('.singaporeSouthS'),
+
+  // <-- ------------------------ Masks ------------------------- -->
+  naSmallMask: document.querySelector('.naSmallMask'),
+  naMediumMask: document.querySelector('.naMediumMask'),
+  naLargeMask: document.querySelector('.naLargeMask'),
+
+  saSmallMask: document.querySelector('.saSmallMask'),
+  saMediumMask: document.querySelector('.saMediumMask'),
+  saLargeMask: document.querySelector('.saLargeMask'),
+
+  euSmallMask: document.querySelector('.euSmallMask'),
+  euMediumMask: document.querySelector('.euMediumMask'),
+  euLargeMask: document.querySelector('.euLargeMask'),
+
+  asSmallMask: document.querySelector('.asSmallMask'),
+  asMediumMask: document.querySelector('.asMediumMask'),
+  asLargeMask: document.querySelector('.asLargeMask'),
+
+  auSmallMask: document.querySelector('.auSmallMask'),
+  auMediumMask: document.querySelector('.auMediumMask'),
+  auLargeMask: document.querySelector('.auLargeMask'),
 };

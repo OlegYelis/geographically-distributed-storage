@@ -310,3 +310,122 @@
   top: 5px;
   right: -66px;
 }
+
+.small_mask {
+  position: absolute;
+  height: 20px;
+  background-color: rgb(0, 84, 209);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.medium_mask {
+  position: absolute;
+  height: 28px;
+  background-color: rgb(0, 84, 209);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.large_mask {
+  position: absolute;
+  height: 9px;
+  background-color: rgb(0, 84, 209);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.auSmallMask {
+  bottom: 131px;
+  left: 1114.1px;
+}
+.auMediumMask {
+  bottom: 126px;
+  left: 1025px;
+}
+.auLargeMask {
+  bottom: 145px;
+  left: 1074px;
+}
+
+.asSmallMask {
+  top: 374px;
+  left: 994.9px;
+}
+.asMediumMask {
+  top: 396px;
+  left: 885px;
+}
+.asLargeMask {
+  top: 311px;
+  left: 1049px;
+}
+
+.euSmallMask {
+  top: 278px;
+  left: 694.9px;
+}
+.euMediumMask {
+  top: 316px;
+  left: 605px;
+}
+.euLargeMask {
+  top: 261px;
+  left: 774px;
+}
+
+.naSmallMask {
+  top: 298px;
+  left: 334.8px;
+}
+.naMediumMask {
+  top: 326px;
+  left: 280px;
+}
+.naLargeMask {
+  top: 311px;
+  left: 236px;
+}
+
+.saSmallMask {
+  top: 523px;
+  left: 449.5px;
+}
+.saMediumMask {
+  top: 576px;
+  left: 420px;
+}
+.saLargeMask {
+  top: 491px;
+  left: 389px;
+}
+
+@keyframes changeSmallMaskWidth {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 31.3px;
+  }
+}
+
+@keyframes changeMediumMaskWidth {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 20px;
+  }
+}
+
+@keyframes changeLargeMaskWidth {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 13px;
+  }
+}

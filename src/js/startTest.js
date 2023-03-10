@@ -95,7 +95,7 @@ export const startTestHandler = () => {
       default:
         break;
     }
-  }, timeOut);
+  }, timeOut + 50);
 };
 
 startTest.addEventListener('click', startTestHandler);
