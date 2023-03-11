@@ -7,30 +7,40 @@ export const addTableToByte = obj => {
         <div class="table_top">
           <h3 class="table_title">${obj.region}</h3>
           <ul class="rating_list list">
-            <li>
-            <img src="../images/star${
-              obj.stars < 5 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 5
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 4 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 4
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 3 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 3
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 2 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 2
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 1 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 1
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
           </ul>
         </div>
@@ -58,30 +68,40 @@ export const addTableToObject = obj => {
           <div class="table_top">
             <h3 class="table_title">${obj.region}</h3>
             <ul class="rating_list list">
-            <li>
-            <img src="../images/star${
-              obj.stars < 5 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 5
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 4 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 4
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 3 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 3
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 2 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 2
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
-            <li>
-            <img src="../images/star${
-              obj.stars < 1 ? '_empty' : '_filled'
-            }.png" alt="star" width="15px" />
+            <li class="item">
+            ${
+              obj.stars < 1
+                ? '<img src="https://i.ibb.co/dQkPVFw/star-empty.png" alt="star" width="15px" />'
+                : '<img src="https://i.ibb.co/s1Cyz5P/star-filled.png" alt="star" width="15px" />'
+            }
             </li>
           </ul>
           </div>
