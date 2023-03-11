@@ -145,4 +145,9 @@ export const getRefs = {
   auSmallMask: document.querySelector('.auSmallMask'),
   auMediumMask: document.querySelector('.auMediumMask'),
   auLargeMask: document.querySelector('.auLargeMask'),
+
+  // <-- ----------------------- Modal/Tables ------------------------ -->
+  modalEl: document.querySelector('.modal'),
+  byteList: document.querySelector('.byteList'),
+  objectList: document.querySelector('.objectList'),
 };

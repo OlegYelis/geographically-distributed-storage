@@ -18,6 +18,7 @@ import {
   singaporeBlueServer,
   westBlueServer,
 } from './toggleLinesBlueServer';
+import { showTable } from './resultTable';
 
 const {
   startTest,
@@ -78,18 +79,22 @@ export const startTestHandler = () => {
     switch (store.blueServer) {
       case 'na1':
         westBlueServer(timeOut * 2);
+        showTable(timeOut * 2);
         break;
 
       case 'na2':
         eastBlueServer(timeOut * 2);
+        showTable(timeOut * 2);
         break;
 
       case 'eu':
         germanyBlueServer(timeOut * 2);
+        showTable(timeOut * 2);
         break;
 
       case 'as':
         singaporeBlueServer(timeOut * 2);
+        showTable(timeOut * 2);
         break;
 
       default:
