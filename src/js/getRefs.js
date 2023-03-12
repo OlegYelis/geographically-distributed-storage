@@ -32,6 +32,7 @@ export const getRefs = {
   // <-- ------------------- Buttons and text -------------------- -->
   skipUsers: document.querySelector('.skip_users'),
   startTest: document.querySelector('.start_test'),
+  startAgain: document.querySelector('.start_again'),
   topText: document.querySelector('.text_top'),
 
   // <-- ------------------ Places for servers ------------------- -->

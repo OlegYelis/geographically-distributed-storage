@@ -37,7 +37,16 @@ export const startTestHandler = () => {
   startTest.classList.add('visually-hidden');
   topText.textContent = '';
 
-  const timeOut = 5000;
+  let timeOut = 5000;
+
+  if (
+    store.asiaUsers === 0 &&
+    store.australiaUsers === 0 &&
+    store.sAmericaUsers === 0
+  ) {
+    console.log(store.asiaUsers, store.australiaUsers, store.sAmericaUsers);
+    timeOut = 1000;
+  }
 
   if (!store.asiaServer) {
     asiaCircle.style.background = 'none';
@@ -103,4 +112,6 @@ export const startTestHandler = () => {
   }, timeOut + 50);
 };
 
-startTest.addEventListener('click', startTestHandler);
+startTest.addEventListener('click', () => {
+  startTestHandler();
+});

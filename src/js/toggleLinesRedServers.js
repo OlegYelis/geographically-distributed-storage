@@ -354,9 +354,9 @@ export const fromEastToSouth = time => {
       saSmallMask.style.animation = 'changeSmallMaskWidth 3.9s forwards';
 
       saInfo.classList.remove('visually-hidden');
-      saInfo.textContent = 'Latency: 185';
+      saInfo.textContent = 'Latency: 200';
       setTimeout(() => {
-        saInfo.textContent = 'Time: 101 sec';
+        saInfo.textContent = 'Time: 120 sec';
       }, time / 2);
       setTimeout(() => {
         eastNaSouthS.classList.add('visually-hidden');

@@ -7,7 +7,7 @@ import {
   objectStorageHtml,
 } from './templatesForTable';
 
-const { modalEl, byteList, objectList } = getRefs;
+const { modalEl, byteList, objectList, startAgain, topText } = getRefs;
 
 const byteCloudTable = sortedUsers => {
   const byteCloudStore = {
@@ -171,8 +171,8 @@ const objectTable = sortedUsers => {
 
   if (store.blueServer === 'na2') {
     objectStore.sa.stars = 3;
-    objectStore.sa.latency = 185;
-    objectStore.sa.time = 101;
+    objectStore.sa.latency = 200;
+    objectStore.sa.time = 120;
     objectStore.sa.streaming = '1080p Full HD';
 
     objectStore.na.stars = 5;
@@ -212,9 +212,9 @@ const objectTable = sortedUsers => {
     objectStore.eu.time = 125;
     objectStore.eu.streaming = '750p HD Ready';
 
-    objectStore.as.stars = 4;
-    objectStore.as.latency = 93;
-    objectStore.as.time = 63;
+    objectStore.as.stars = 5;
+    objectStore.as.latency = 73;
+    objectStore.as.time = 41;
     objectStore.as.streaming = '4K/2160p Ultra HD';
 
     objectStore.au.stars = 3;
@@ -268,5 +268,7 @@ export const showTable = time => {
 
   setTimeout(() => {
     modalEl.classList.remove('visually-hidden');
+    topText.textContent = 'Do you want to';
+    startAgain.classList.remove('visually-hidden');
   }, time);
 };

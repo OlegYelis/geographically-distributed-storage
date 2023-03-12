@@ -179,6 +179,7 @@
 .text_top {
   position: absolute;
   top: 15px;
+  z-index: 2;
 }
 
 .next_step {
@@ -196,6 +197,11 @@
     cursor: default;
     color: rgb(174, 199, 245);
   }
+}
+
+.start_again {
+  left: 150px;
+  z-index: 2;
 }
 
 .circle_empty {
