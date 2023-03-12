@@ -8,10 +8,10 @@ const {
   euList,
   asList,
   auList,
-  naFirstCircle,
-  naSecondCircle,
-  europeCircle,
-  asiaCircle,
+  naFirstPlace,
+  naSecondPlace,
+  europePlace,
+  asiaPlace,
   topText,
 } = getRefs;
 
@@ -38,10 +38,10 @@ const nextStepHandler = () => {
 
   store.status = 'servers';
   skipUsers.classList.add('visually-hidden');
-  naFirstCircle.classList.remove('visually-hidden');
-  naSecondCircle.classList.remove('visually-hidden');
-  europeCircle.classList.remove('visually-hidden');
-  asiaCircle.classList.remove('visually-hidden');
+  naFirstPlace.classList.remove('visually-hidden');
+  naSecondPlace.classList.remove('visually-hidden');
+  europePlace.classList.remove('visually-hidden');
+  asiaPlace.classList.remove('visually-hidden');
   topText.textContent =
     'Where is your data? Choose one spot for Object Storage system';
 };

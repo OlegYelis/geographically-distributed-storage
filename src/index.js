@@ -7,3 +7,4 @@ import './js/skipUsers';
 import './js/addServers';
 import './js/addServers';
 import './js/startTest';
+import './js/startAgain';

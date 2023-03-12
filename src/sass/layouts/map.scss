@@ -179,7 +179,7 @@
 .text_top {
   position: absolute;
   top: 15px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .next_step {
@@ -200,8 +200,13 @@
 }
 
 .start_again {
-  left: 150px;
-  z-index: 2;
+  left: 133px;
+  z-index: 3;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
 }
 
 .circle_empty {
@@ -209,9 +214,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
 
   &:hover {
     background-image: url(../images/circle_filled.png);
@@ -251,7 +255,7 @@
 }
 
 .red_server {
-  position: relative;
+  position: absolute;
   top: -15px;
   width: 50px;
   z-index: 1;
