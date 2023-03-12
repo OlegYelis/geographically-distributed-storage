@@ -7,10 +7,10 @@ const {
   saMedium,
   saLarge,
   skipUsers,
-  naFirstPlace,
-  naSecondPlace,
-  europePlace,
-  asiaPlace,
+  naFirstCircle,
+  naSecondCircle,
+  europeCircle,
+  asiaCircle,
   topText,
 } = getRefs;
 
@@ -44,10 +44,10 @@ const numberOfEndUsers = evt => {
     if (nAmericaUsers && europeUsers && asiaUsers && australiaUsers) {
       store.status = 'servers';
       skipUsers.classList.add('visually-hidden');
-      naFirstPlace.classList.remove('visually-hidden');
-      naSecondPlace.classList.remove('visually-hidden');
-      europePlace.classList.remove('visually-hidden');
-      asiaPlace.classList.remove('visually-hidden');
+      naFirstCircle.classList.remove('visually-hidden');
+      naSecondCircle.classList.remove('visually-hidden');
+      europeCircle.classList.remove('visually-hidden');
+      asiaCircle.classList.remove('visually-hidden');
       topText.textContent =
         'Where is your data? Choose one spot for Object Storage system';
     }

@@ -44,32 +44,33 @@ export const startTestHandler = () => {
     store.australiaUsers === 0 &&
     store.sAmericaUsers === 0
   ) {
-    timeOut = 2500;
+    console.log(store.asiaUsers, store.australiaUsers, store.sAmericaUsers);
+    timeOut = 1000;
   }
 
   if (!store.asiaServer) {
-    asiaCircle.classList.add('visually-hidden');
+    asiaCircle.style.background = 'none';
     fromGermanyToAustralia(timeOut);
     fromGermanyToAsia(timeOut);
     fromGermanyToEurope(timeOut);
     fromEastToNorth(timeOut);
     fromWestToSouth(timeOut);
   } else if (!store.europeServer) {
-    europeCircle.classList.add('visually-hidden');
+    europeCircle.style.background = 'none';
     fromSingaporeToAsia(timeOut);
     fromSingaporeToAustralia(timeOut);
     fromEastToNorth(timeOut);
     fromEastToEurope(timeOut);
     fromWestToSouth(timeOut);
   } else if (!store.naFirstServer) {
-    naFirstCircle.classList.add('visually-hidden');
+    naFirstCircle.style.background = 'none';
     fromEastToSouth(timeOut);
     fromEastToNorth(timeOut);
     fromGermanyToEurope(timeOut);
     fromSingaporeToAustralia(timeOut);
     fromSingaporeToAsia(timeOut);
   } else if (!store.naSecondServer) {
-    naSecondCircle.classList.add('visually-hidden');
+    naSecondCircle.style.background = 'none';
     fromWestToNorth(timeOut);
     fromWestToSouth(timeOut);
     fromGermanyToEurope(timeOut);

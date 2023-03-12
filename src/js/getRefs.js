@@ -36,14 +36,10 @@ export const getRefs = {
   topText: document.querySelector('.text_top'),
 
   // <-- ------------------ Places for servers ------------------- -->
-  naFirstPlace: document.querySelector('.na-first_circle'),
-  naSecondPlace: document.querySelector('.na-second_circle'),
-  europePlace: document.querySelector('.europe_circle'),
-  asiaPlace: document.querySelector('.asia_circle'),
-  naFirstCircle: document.querySelector('.na-first_circle .circle_empty'),
-  naSecondCircle: document.querySelector('.na-second_circle .circle_empty'),
-  europeCircle: document.querySelector('.europe_circle .circle_empty'),
-  asiaCircle: document.querySelector('.asia_circle .circle_empty'),
+  naFirstCircle: document.querySelector('.na-first_circle'),
+  naSecondCircle: document.querySelector('.na-second_circle'),
+  europeCircle: document.querySelector('.europe_circle'),
+  asiaCircle: document.querySelector('.asia_circle'),
 
   // <-- ----------------------- Servers ------------------------- -->
   naFirstBlue: document.querySelector('.na-first_blue'),

@@ -11,6 +11,4 @@ export const store = {
   naSecondServer: false,
   europeServer: false,
   asiaServer: false,
-  byteCloudHtml: `<li><h2 class="list_title">ByteCloud</h2></li>`,
-  objectStorageHtml: `<li><h2 class="list_title">Object Storage</h2></li>`,
 };

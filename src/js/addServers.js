@@ -82,7 +82,7 @@ const addServerHandler = evt => {
       startTest.classList.remove('disabled');
     }
   }
-  evt.target.classList.add('visually-hidden');
+  evt.target.style.background = 'none';
 
   if (
     store.asiaServer &&

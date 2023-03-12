@@ -1,6 +1,11 @@
 import { store } from './store';
 import { getRefs } from './getRefs';
-import { addTableToByte, addTableToObject } from './templatesForTable';
+import {
+  addTableToByte,
+  addTableToObject,
+  byteCloudHtml,
+  objectStorageHtml,
+} from './templatesForTable';
 
 const { modalEl, byteList, objectList, startAgain, topText } = getRefs;
 
@@ -95,8 +100,7 @@ const byteCloudTable = sortedUsers => {
     }
   });
 
-  byteList.innerHTML = '';
-  byteList.insertAdjacentHTML('beforeend', store.byteCloudHtml);
+  byteList.insertAdjacentHTML('beforeend', byteCloudHtml);
 };
 
 const objectTable = sortedUsers => {
@@ -167,8 +171,8 @@ const objectTable = sortedUsers => {
 
   if (store.blueServer === 'na2') {
     objectStore.sa.stars = 3;
-    objectStore.sa.latency = 185;
-    objectStore.sa.time = 101;
+    objectStore.sa.latency = 200;
+    objectStore.sa.time = 120;
     objectStore.sa.streaming = '1080p Full HD';
 
     objectStore.na.stars = 5;
@@ -193,30 +197,30 @@ const objectTable = sortedUsers => {
   }
 
   if (store.blueServer === 'as') {
-    objectStore.eu.stars = 3;
-    objectStore.eu.latency = 185;
-    objectStore.eu.time = 101;
-    objectStore.eu.streaming = '1080p Full HD';
+    objectStore.sa.stars = 3;
+    objectStore.sa.latency = 185;
+    objectStore.sa.time = 101;
+    objectStore.sa.streaming = '1080p Full HD';
 
     objectStore.na.stars = 3;
     objectStore.na.latency = 226;
     objectStore.na.time = 113;
     objectStore.na.streaming = '1080p Full HD';
 
-    objectStore.sa.stars = 2;
-    objectStore.sa.latency = 250;
-    objectStore.sa.time = 125;
-    objectStore.sa.streaming = '750p HD Ready';
+    objectStore.eu.stars = 2;
+    objectStore.eu.latency = 250;
+    objectStore.eu.time = 125;
+    objectStore.eu.streaming = '750p HD Ready';
 
     objectStore.as.stars = 5;
     objectStore.as.latency = 73;
     objectStore.as.time = 41;
     objectStore.as.streaming = '4K/2160p Ultra HD';
 
-    objectStore.au.stars = 4;
-    objectStore.au.latency = 93;
-    objectStore.au.time = 63;
-    objectStore.au.streaming = '4K/2160p Ultra HD';
+    objectStore.au.stars = 3;
+    objectStore.au.latency = 207;
+    objectStore.au.time = 110;
+    objectStore.au.streaming = '750p HD Ready';
   }
 
   sortedUsers.forEach(elem => {
@@ -245,8 +249,7 @@ const objectTable = sortedUsers => {
     }
   });
 
-  objectList.innerHTML = '';
-  objectList.insertAdjacentHTML('beforeend', store.objectStorageHtml);
+  objectList.insertAdjacentHTML('beforeend', objectStorageHtml);
 };
 
 export const showTable = time => {

@@ -296,9 +296,9 @@ export const germanyBlueServer = time => {
       naSmallMask.style.animation = 'changeSmallMaskWidth 3s forwards';
 
       naInfo.classList.remove('visually-hidden');
-      naInfo.textContent = 'Latency: 100';
+      naInfo.textContent = 'Latency: 101';
       setTimeout(() => {
-        naInfo.textContent = 'Time: 70 sec';
+        naInfo.textContent = 'Time: 56 sec';
       }, time / 2);
       setTimeout(() => {
         germanyNorthS.classList.add('visually-hidden');
@@ -334,9 +334,9 @@ export const germanyBlueServer = time => {
       saSmallMask.style.animation = 'changeSmallMaskWidth 3.9s forwards';
 
       saInfo.classList.remove('visually-hidden');
-      saInfo.textContent = 'Latency: 214';
+      saInfo.textContent = 'Latency: 174';
       setTimeout(() => {
-        saInfo.textContent = 'Time: 92 sec';
+        saInfo.textContent = 'Time: 75 sec';
       }, time / 2);
       setTimeout(() => {
         germanySouthS.classList.add('visually-hidden');

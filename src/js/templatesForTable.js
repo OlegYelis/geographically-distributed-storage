@@ -1,7 +1,8 @@
-import { store } from './store';
+export let byteCloudHtml = `<li><h2 class="list_title">ByteCloud</h2></li>`;
+export let objectStorageHtml = `<li><h2 class="list_title">Object Storage</h2></li>`;
 
 export const addTableToByte = obj => {
-  store.byteCloudHtml += `
+  byteCloudHtml += `
         <li class="table">
         <div class="table_top">
           <h3 class="table_title">${obj.region}</h3>
@@ -62,7 +63,7 @@ export const addTableToByte = obj => {
 };
 
 export const addTableToObject = obj => {
-  store.objectStorageHtml += `
+  objectStorageHtml += `
           <li class="table">
           <div class="table_top">
             <h3 class="table_title">${obj.region}</h3>
